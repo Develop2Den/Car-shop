@@ -13,7 +13,7 @@ const GalleryPage = () => {
 
     useEffect(() => {
         if (products.length === 0) {
-            axios.get('/Car-shop/product.json').then(({ data }) => dispatch(addProducts(data)));
+            axios.get('./Car-shop/product.json').then(({ data }) => dispatch(addProducts(data)));
         }
         setIsLoad(true);
     }, [dispatch, products]);

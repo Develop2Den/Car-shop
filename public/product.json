@@ -1,0 +1,157 @@
+[
+  {
+    "id": 1,
+    "name":"Toyota LC 300",
+    "color":"Black",
+    "article":"00-01",
+    "price":"95000",
+    "url":"https://res.cloudinary.com/dibklsolc/image/upload/v1704363623/Cars/Toyota-Land-Cruiser_aupk14.jpg",
+    "cart":{
+      "count":0,
+      "inCart":false
+    },
+    "isFavorite":false
+  },
+  {
+    "id": 2,
+    "name":"Toyota LC Prado",
+    "color":"Black",
+    "article":"00-02",
+    "price":"70000",
+    "url":"https://res.cloudinary.com/dibklsolc/image/upload/v1704363621/Cars/prado_mly6fi.jpg",
+    "cart":{
+      "count":0,
+      "inCart":false
+    },
+    "isFavorite":false
+  },
+  {
+    "id": 3,
+    "name":"Toyota Sequoia",
+    "color":"White",
+    "article":"00-03",
+    "price":"90000",
+    "url":"https://res.cloudinary.com/dibklsolc/image/upload/v1704363620/Cars/toyota-sequoia_putotm.jpg",
+    "cart":{
+      "count":0,
+      "inCart":false
+    },
+    "isFavorite":false
+  },
+  {
+    "id": 4,
+    "name":"Mitsubishi Pajero",
+    "color":"Black",
+    "article":"00-04",
+    "price":"60000",
+    "url":"https://res.cloudinary.com/dibklsolc/image/upload/v1704363620/Cars/pajero_jtym84.jpg",
+    "cart":{
+      "count":0,
+      "inCart":false
+    },
+    "isFavorite":false
+  },
+  {
+    "id": 5,
+    "name":"Nissan Patrol",
+    "color":"Black",
+    "article":"00-05","price":"70000",
+    "url":"https://res.cloudinary.com/dibklsolc/image/upload/v1704363621/Cars/patrol_iyx42a.jpg",
+    "cart":{
+      "count":0,
+      "inCart":false
+    },
+    "isFavorite":false
+  },
+  {
+    "id": 6,
+    "name":"Lincoln Navigator",
+    "color":"Black",
+    "article":"00-06",
+    "price":"100000",
+    "url":"https://res.cloudinary.com/dibklsolc/image/upload/v1704363621/Cars/Lincoln_qmrmqk.jpg",
+    "cart":{
+      "count":0,
+      "inCart":false
+    },
+    "isFavorite":false
+  },
+  {
+    "id": 7,
+    "name":"Cadillac Escalade",
+    "color":"Dark Blue",
+    "article":"00-07",
+    "price":"110000",
+    "url":"https://res.cloudinary.com/dibklsolc/image/upload/v1704363620/Cars/escalade_rrrenm.jpg",
+    "cart":{
+      "count":0,
+    "inCart":false
+    },
+    "isFavorite":false
+  },
+  {
+    "id": 8,
+    "name":"Toyota Hilux",
+    "color":"Grey",
+    "article":"00-08",
+    "price":"50000",
+    "url":"https://res.cloudinary.com/dibklsolc/image/upload/v1704363620/Cars/Toyota-Hilux-Rogue_ab0lwj.jpg",
+    "cart":{
+      "count":0,
+      "inCart":false
+    },
+    "isFavorite":false
+  },
+  {
+    "id": 9,
+    "name":"Land Rover",
+    "color":"Black",
+    "article":"00-09",
+    "price":"65000",
+    "url":"https://res.cloudinary.com/dibklsolc/image/upload/v1704363620/Cars/land-rover-defender_emowyc.jpg",
+    "cart":{
+      "count":0,
+      "inCart":false
+    },
+    "isFavorite":false
+  },
+  {
+    "id": 10,
+    "color":"Black",
+    "name":"Mersedes G-Class",
+    "article":"00-10",
+    "price":"125000",
+    "url":"https://res.cloudinary.com/dibklsolc/image/upload/v1704363621/Cars/gelendvagen-mercedes-benz-g-wagen_2_sinljk.jpg",
+    "cart":{
+      "count":0,
+      "inCart":false
+    },
+    "isFavorite":false
+  },
+  {
+    "id": 11,
+    "name":"GMC Yukon",
+    "color":"Dark Brown",
+    "article":"00-11",
+    "price":"63000",
+    "url":"https://res.cloudinary.com/dibklsolc/image/upload/v1704363621/Cars/yukon_zihf44.jpg",
+    "cart":{
+      "count":0,
+      "inCart":false
+    },
+    "isFavorite":false
+  },
+  {
+    "id": 12,
+    "name":"GMC Saburban",
+    "color":"Black",
+    "article":"00-12",
+    "price":"95000",
+    "url":"https://res.cloudinary.com/dibklsolc/image/upload/v1704363620/Cars/suburban_jt6uov.jpg",
+    "cart":{
+      "count":0,
+      "inCart":false
+    },
+    "isFavorite":false
+  }
+]

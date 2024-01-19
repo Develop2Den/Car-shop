@@ -1,0 +1,117 @@
+@mixin content-container {
+    min-width: 37.5rem;
+    max-width: 118rem;
+    margin: 0 auto;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+}
+
+@mixin reset-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-center-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-column-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin arbutus-font-normal {
+    font-family: 'Arbutus Slab', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+@mixin arbutus-font-light {
+    font-family: 'Arbutus Slab', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+}
+
+@mixin arbutus-font-semibold {
+    font-family: 'Arbutus Slab', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+}
+
+@mixin black-font-bold {
+    font-family: 'Black Ops One', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+@mixin roboto-font-bold {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+}
+
+@mixin grid-container {
+    position: relative;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0.2rem;
+}
+
+@mixin before {
+    position: absolute;
+    display: block;
+    width: 0.65rem;
+    height: 1.2rem;
+    left: 12rem;
+    top: 1.1rem;
+}
+
+@mixin btn-size {
+    padding: 1.2rem 4.2rem;
+    background: rgb(255 255 255 / 70%);
+    border: 0.1rem solid #373f41;
+    border-radius: 0.4rem;
+}
+
+@mixin total-size {
+    font-size: 1.4rem;
+    line-height: 3.2rem;
+    color: #373f41;
+}
+
+@mixin sum-size {
+    font-size: 2.4rem;
+    line-height: 4.8rem;
+    letter-spacing: 0.04em;
+}
+
+@mixin payBlock {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 11.3rem;
+    border: 0.1rem solid #8c8c8c;
+    border-radius: 0.2rem;
+    position: relative;
+}
+
+@mixin centerBlock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

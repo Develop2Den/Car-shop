@@ -1,0 +1,147 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.container {
+    @include content-container;
+
+    display: flex;
+    gap: 9.7rem;
+    margin-top: 3.8rem;
+    margin-bottom: 8rem;
+
+    @media (max-width: $bp-medium) {
+        flex-direction: column;
+        gap: 5rem;
+    }
+}
+
+.navWrapper {
+    flex-grow: 1;
+    position: relative;
+
+    @media (max-width: $bp-medium) {
+        align-self: end;
+    }
+}
+
+.navMenu,
+.navMenuList {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    color: $dark-color;
+    z-index: 2;
+}
+
+.navHeaderBtn {
+    padding-left: 2rem;
+    padding-top: 1.5rem;
+    display: none;
+    background-color: transparent;
+    border: none;
+
+    @media (max-width: $bp-medium) {
+        display: block;
+        position: relative;
+        margin-bottom: 0;
+        padding-right: 32px;
+        text-align: right;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 14px;
+            height: 8px;
+            border-top: 8px solid $dark-color;
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+            position: absolute;
+            right: 0.9rem;
+            top: 2.2rem;
+        }
+
+        &.navVisible {
+            border: 1px solid $dark-color;
+            border-bottom: none;
+        }
+
+        &.navVisible::after {
+            width: 14px;
+            height: 8px;
+            border-top: none;
+            border-bottom: 8px solid $dark-color;
+        }
+    }
+}
+
+.navHeader,
+.navHeaderBtn {
+    @include roboto-font-bold;
+
+    width: 100%;
+    font-size: 1.8rem;
+    line-height: 2.4rem;
+    color: $dark-color;
+}
+
+.navHeader {
+    margin-bottom: 3rem;
+
+    @media (max-width: $bp-medium) {
+        display: none;
+    }
+}
+
+.navMenu {
+    position: sticky;
+    top: 2rem;
+
+    .navMenuList {
+        color: inherit;
+        @include roboto-font-bold;
+
+        font-size: 1.6rem;
+        line-height: 2rem;
+        letter-spacing: 0.04em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 2.5rem;
+        width: 100%;
+
+        @media (max-width: $bp-medium) {
+            &.navVisible {
+                display: flex;
+            }
+
+            display: none;
+            padding: 2rem;
+            border: 1px solid $dark-color;
+            border-top: none;
+            background-color: #fff;
+            position: initial;
+        }
+    }
+
+    .navMenuListItem {
+        color: inherit;
+        width: inherit;
+    }
+
+    .navMenuLink {
+        color: inherit;
+    }
+
+    @media (max-width: $bp-medium) {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+.serviceTopicsList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}

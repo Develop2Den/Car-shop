@@ -1,0 +1,73 @@
+@import '../../../styles/variables';
+@import '../../../styles/mixins';
+
+.carousel {
+    padding: 2rem 0 2.5rem;
+    @include content-container;
+
+    text-align: center;
+}
+
+:global .carousel .control-dots {
+    bottom: -2.5rem !important;
+    margin: 0 !important;
+    max-width: 58.2rem !important;
+    left: 50%;
+    transform: translateX(-50%);
+    border-top: 1px solid $dark-color;
+    display: flex;
+}
+
+:global .carousel .control-dots .dot {
+    opacity: 0 !important;
+    width: 19.4rem !important;
+    height: 5px !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: $dark-color !important;
+}
+
+:global .carousel .control-dots .dot.selected,
+:global .carousel .control-dots .dot:hover {
+    opacity: 1 !important;
+}
+
+.title {
+    @include black-font-bold;
+
+    font-weight: normal !important;
+    font-size: $subtitles-fs;
+    color: red;
+    margin-bottom: 3rem;
+}
+
+.img {
+    height: 75.4rem !important;
+}
+
+.text {
+    @include black-font-bold;
+
+    font-size: $subtitles-fs !important;
+}
+
+.texts {
+    @include black-font-bold;
+
+    font-weight: normal !important;
+    font-size: $titles-fs !important;
+    color: red !important;
+}
+
+@media only screen and (max-width: $bp-medium) {
+    .img {
+        height: 50rem !important;
+    }
+}
+
+@media only screen and (max-width: $bp-small) {
+    .img {
+        height: 35rem !important;
+    }
+}

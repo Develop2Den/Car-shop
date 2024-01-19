@@ -1,0 +1,26 @@
+.error {
+  line-height: 1.6rem;
+  min-height: 1.6rem;
+  width: 60%;
+  color: #b90e0a;
+  text-align: left;
+  font-size: 1.3rem;
+}
+
+.input {
+  border: 0.1rem solid gray;
+  border-radius: 0.2rem !important;
+  margin-top: 2rem !important;
+  box-sizing: border-box;
+  width: 60% !important;
+  max-width: unset !important;
+  font-size: 2rem !important;
+  background-color: white;
+}
+
+label {
+  width: 100%;
+  text-align: left;
+  color: grey;
+  font-size: 1.2rem !important;
+}

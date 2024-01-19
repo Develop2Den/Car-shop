@@ -1,0 +1,201 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+
+.head {
+  background-image: url("../../image/avtom.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  @include content-container;
+}
+
+.headerTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1rem;
+}
+
+.title {
+  @include black-font-bold;
+  font-weight: normal !important;
+  font-size: $titles-fs;
+  color: red;
+}
+
+.logo {
+  width: 7rem;
+  height: 5rem;
+  margin: 1rem auto;
+}
+
+.headerNav {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.headerNavList {
+  color: white;
+  font-size: $subtitles-fs;
+  padding-right: 5rem;
+}
+
+.headerIcon {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.headerIconList {
+  padding-right: 4rem;
+  position: relative;
+}
+
+.headerIconLists {
+  padding-right: 4rem;
+  margin-top: 0.2rem;
+  position: relative;
+}
+
+.quantity {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  font-weight: bold;
+  background-color: red;
+  border-radius: 0.5rem;
+  font-size: 1.1rem !important;
+}
+
+.hr {
+  background-color: #30420f;
+  height: 0.2rem;
+}
+
+.checkbox {
+  display: none;
+}
+
+.hamburgerNav {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 45%;
+}
+
+.hamburgerList {
+  position: relative;
+  text-align: start;
+  font-size: $subtitles-fs;margin-top: 1rem;
+}
+
+.colorList {
+  color: white;
+}
+
+@media only screen and (width <= 40.8rem) {
+  .head {
+    height: 18rem;
+  }
+
+  .headerTitle {
+    margin: 4rem 0;
+  }
+
+  .headerNav {
+    display: none;
+  }
+
+  .headerIcon {
+    display: none;
+  }
+
+  .quantity {
+    color: white;
+    top: 0.7rem;
+    left: 11rem;
+    background-color: olive;
+    font-size: 1.5rem !important;
+    margin-left: 1rem;
+  }
+
+  .hamburgerNav {
+    display: flex;
+  }
+
+  .hamburgerLines {
+    height: 2.6rem;
+    width: 3.2rem;
+    position: absolute;
+    top: 8rem;
+    right: 5rem;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    & .line {
+      display: block;
+      height: 0.4rem;
+      width: 100%;
+      border-radius: 1rem;
+      background: red;
+
+      &1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+      }
+
+      &2 {
+        transition: transform 0.2s ease-in-out;
+      }
+
+      &3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+      }
+    }
+  }
+
+  .checkbox {
+    position: absolute;
+    display: block;
+    height: 3.2rem;
+    width: 3.5rem;
+    top: 8rem;
+    right: 5rem;
+    z-index: 6;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  .header input[type='checkbox']:checked {
+    max-height: 100rem;
+    transition: max-height 0.5s ease-in;
+  }
+
+  .header input[type='checkbox']:checked ~ .hamburgerLines .line1 {
+    transform: rotate(45deg);
+  }
+
+  .header input[type='checkbox']:checked ~ .hamburgerLines .line2 {
+    transform: scaleY(0);
+  }
+
+  .header input[type='checkbox']:checked ~ .hamburgerLines .line3 {
+    transform: rotate(-45deg);
+  }
+}
+

@@ -1,0 +1,16 @@
+@import './styles/normalize';
+@import './styles/variables';
+@import './styles/mixins';
+@import './styles/typography';
+
+body {
+  @include arbutus-font-normal ;
+
+  font-size: 1.4rem;
+  background-color: antiquewhite;
+}
+
+ /* TECH CLASSES */
+   .container {
+     @include content-container;
+   }

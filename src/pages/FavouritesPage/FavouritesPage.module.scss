@@ -1,0 +1,118 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.main {
+    @include content-container;
+
+    text-align: center;
+}
+
+.img {
+    width: 100%;
+    height: 25vh;
+    border: dimgrey solid 0.1rem;
+}
+
+.inform {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #FFF;
+}
+
+.title {
+    @include arbutus-font-semibold;
+    @include sum-size;
+
+    color: black;
+}
+
+.price {
+    @include sum-size;
+
+    color: green;
+}
+
+.empty {
+    display: flex;
+    justify-content: center;
+    padding: 8rem 0.5rem;
+    margin: 0 auto;
+    width: max-content;
+    font-size: 2rem;
+}
+
+.list {
+    @include content-container;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.55rem 1.6rem;
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+}
+
+.listItem {
+    border: dimgrey solid 0.2rem;
+    border-radius: 0.5rem;
+    transition: box-shadow 0.3s ease;
+}
+
+.listItem:hover {
+    box-shadow: 0 0 15px rgb(0 0 0 / 70%);
+}
+
+.btnsBlock {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.btn {
+    @include btn-size;
+
+    padding: 0.3rem 4rem !important;
+    margin-bottom: 0.2rem;
+    color: red;
+}
+
+.btnHeart {
+    background-color: antiquewhite;
+}
+
+.text {
+    @include arbutus-font-semibold;
+    @include sum-size;
+
+    margin-bottom: 19.5rem;
+}
+
+.textSpan {
+    color: red;
+}
+
+.loader {
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    opacity: 0.7;
+}
+
+@media only screen and (max-width: $bp-medium) {
+    .list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .img {
+        height: 25vh;
+    }
+}
+@media only screen and (max-width: $bp-small) {
+    .list {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .img {
+        height: 30vh;
+    }
+}

@@ -1,0 +1,82 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.container {
+  @include content-container;
+}
+
+.title {
+  @include arbutus-font-normal ;
+
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  position: relative;
+  font-size: 3rem ;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.1rem;
+    background: #373f41;
+    left: 0;
+    top: 3.5rem;
+  }
+}
+
+.text {
+  margin-top: 1rem;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.textBold {
+  font-weight: bold;
+  margin-top: 1rem;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.textTitle {
+  @include arbutus-font-normal ;
+
+  font-size: 2rem;
+}
+
+.textTitles {
+  @include arbutus-font-semibold;
+
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.body {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+  @media only screen and (max-width: $bp-small) {
+   flex-direction: column;
+  }
+}
+
+.warnText {
+  @include arbutus-font-normal ;
+
+  font-size: 2.5rem;
+  color: red;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.map {
+  text-align: center;
+}
+
+.mapTextTitles {
+  @include arbutus-font-semibold;
+
+  font-size: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+
+}

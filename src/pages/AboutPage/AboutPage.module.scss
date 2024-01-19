@@ -1,0 +1,57 @@
+@import '../../styles/mixins';
+
+.container {
+  @include content-container;
+}
+
+.title {
+  @include arbutus-font-normal;
+
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  position: relative;
+  font-size: 3rem ;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.1rem;
+    background: #373f41;
+    left: 0;
+    top: 3.5rem;
+  }
+}
+
+.text {
+  margin-top: 1rem;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.subTitle {
+  @include arbutus-font-semibold;
+
+  margin-top: 1.5rem;
+}
+
+.li {
+  list-style-type: square !important;
+}
+
+.subTitles {
+  @include arbutus-font-normal;
+
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.italicTitle {
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+.list {
+  margin-bottom: 3rem;
+}

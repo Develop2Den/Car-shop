@@ -1,0 +1,52 @@
+@import '../../styles/mixins';
+@import "../../styles/variables";
+
+.main {
+  @include content-container;
+}
+
+.title {
+  @include black-font-bold;
+  @include sum-size;
+
+  margin-top: 1.7rem;
+  margin-bottom: 1.7rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 0.1rem solid gray;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.input {
+  border: 0.1rem solid gray;
+  border-radius: 0.2rem;
+  margin-top: 2rem !important;
+  padding: 1rem 6rem;
+  box-sizing: border-box;
+  width: 75% !important;
+  max-width: unset !important;
+}
+
+.btnCheck {
+  @include btn-size;
+
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  color: red;
+}
+
+.textFieldRoot {
+  width: 100% !important;
+}
+
+@media only screen and (max-width: $bp-small) {
+.mainSection {
+  min-width: 37.5rem;
+
+}
+}

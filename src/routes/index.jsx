@@ -1,5 +1,5 @@
 import React from 'react';
-import { createBrowserRouter, Navigate } from 'react-router-dom';
+import { createHashRouter, Navigate } from 'react-router-dom';
 import AppLayout from './AppLayout';
 import ErrorPage from '../pages/ErrorPage/ErrorPage';
 import MainPage from '../pages/MainPage';
@@ -13,7 +13,7 @@ import CheckoutPage from '../pages/CheckoutPage';
 import DetailsPage from '../pages/DetailsPage';
 import CustomerServicePage from '../pages/CustomerServicePage';
 
-export const router = createBrowserRouter([
+export const router = createHashRouter([
     {
         path: '/',
         element: <AppLayout />,

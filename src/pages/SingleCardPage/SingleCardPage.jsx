@@ -72,8 +72,8 @@ const SingleCardPage = ({ product }) => {
                         handleClick={favouritesClicked ? removeFromFavourites : addToFavourites}
                         text={<Icon type={isFavorite ? 'bagFavIconFill' : 'bagFavIcon'} />}
                     />
-                    <Link target="_blank" to="https://google.com">
-                        <Button text="More details" className={styles.btn} />
+                   <Link className={styles.btn} target="_blank" to="https://google.com">
+                        <Button text="More details" className={styles.btnColorText}/>
                     </Link>
                     <Button text="Add to Basket" className={styles.btn} handleClick={addToCart} />
                 </div>

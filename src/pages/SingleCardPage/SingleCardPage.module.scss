@@ -70,6 +70,11 @@
   color: red;
 }
 
+.btnColorText {
+  color: red;
+  background: rgb(255 255 255 / 70%);
+}
+
 .btnHeart {
   background-color: antiquewhite;
 }
@@ -84,3 +89,13 @@
   height: 70vh;
   opacity: 0.7;
 }
+
+@media only screen and (max-width: $bp-small) {
+  .infoBox {
+    flex-direction: column;
+  }
+  .btn {
+    padding-right: 2rem !important;
+    padding-left: 2rem !important;
+  }
+ }

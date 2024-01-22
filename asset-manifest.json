@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Car-shop/static/css/main.8c057f40.css",
-    "main.js": "/Car-shop/static/js/main.9563ff6c.js",
-    "static/media/Cadillac.jpg": "/Car-shop/static/media/Cadillac.28b79dbfcbb9455e84e9.jpg",
-    "static/media/avtom.jpg": "/Car-shop/static/media/avtom.4b8baf111f35e0351003.jpg",
-    "static/media/vnedorozhnik_dzhip_pustynia_188096_1920x1080.jpg": "/Car-shop/static/media/vnedorozhnik_dzhip_pustynia_188096_1920x1080.ff0f68783b8baee4f370.jpg",
-    "static/media/hummer_h2.jpg": "/Car-shop/static/media/hummer_h2.f837ff9e72e916c74c86.jpg",
-    "static/media/land_rover_defender.jpg": "/Car-shop/static/media/land_rover_defender.110d9e154ad5315e4b4f.jpg",
-    "static/media/avtomobil_vnedorozhnik_igrushka_200172_1920x1080.jpg": "/Car-shop/static/media/avtomobil_vnedorozhnik_igrushka_200172_1920x1080.395aa6c9c80fd8f0c3a8.jpg",
-    "static/media/Logo.png": "/Car-shop/static/media/Logo.2d225f64ddc61d855341.png",
-    "index.html": "/Car-shop/index.html",
-    "main.8c057f40.css.map": "/Car-shop/static/css/main.8c057f40.css.map",
-    "main.9563ff6c.js.map": "/Car-shop/static/js/main.9563ff6c.js.map"
+    "main.css": "/static/css/main.11adaccf.css",
+    "main.js": "/static/js/main.04c5139c.js",
+    "static/media/Cadillac.jpg": "/static/media/Cadillac.28b79dbfcbb9455e84e9.jpg",
+    "static/media/avtom.jpg": "/static/media/avtom.4b8baf111f35e0351003.jpg",
+    "static/media/vnedorozhnik_dzhip_pustynia_188096_1920x1080.jpg": "/static/media/vnedorozhnik_dzhip_pustynia_188096_1920x1080.ff0f68783b8baee4f370.jpg",
+    "static/media/hummer_h2.jpg": "/static/media/hummer_h2.f837ff9e72e916c74c86.jpg",
+    "static/media/land_rover_defender.jpg": "/static/media/land_rover_defender.110d9e154ad5315e4b4f.jpg",
+    "static/media/avtomobil_vnedorozhnik_igrushka_200172_1920x1080.jpg": "/static/media/avtomobil_vnedorozhnik_igrushka_200172_1920x1080.395aa6c9c80fd8f0c3a8.jpg",
+    "static/media/Logo.png": "/static/media/Logo.2d225f64ddc61d855341.png",
+    "index.html": "/index.html",
+    "main.11adaccf.css.map": "/static/css/main.11adaccf.css.map",
+    "main.04c5139c.js.map": "/static/js/main.04c5139c.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c057f40.css",
-    "static/js/main.9563ff6c.js"
+    "static/css/main.11adaccf.css",
+    "static/js/main.04c5139c.js"
   ]
 }
